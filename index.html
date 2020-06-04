@@ -113,7 +113,7 @@
                                 </li>
                                 <li class="timeline-item experience-internship">
                                     <h3 class="timeline-title"><span class="experience-place">长沙阿云科技有限公司(职责：前端)</span>
-                                        <time class="experience-time">2018.05-至今</time>
+                                        <time class="experience-time">2018.05-2019.09</time>
                                     </h3>
                                     <dl class="experience-description timeline-content">
                                         <dt class="experience-position">vps官网 +管理后台</dt>
@@ -122,35 +122,113 @@
                                         <dd class="experience-task"> 一人完成 <strong> 官网jq+webpack打包</strong>管理后台angular 1</dd>
                                     </dl>
                                 </li>
+                                <li class="timeline-item experience-internship">
+                                    <h3 class="timeline-title"><span class="experience-place">湖南中纵联联有限公司(职责：.net core后端+部分架构)</span>
+                                        <time class="experience-time">2019.09-至今</time>
+                                    </h3>
+                                    <dl class="experience-description timeline-content">
+                                        <dt class="experience-position">
+                                            identityServer4认证中心服务
+                                        </dt>
+                                        <dd class="experience-task"> 一人完成 <strong> 官网jq+webpack打包</strong>管理后台angular 8+angular material</dd>
+                                    </dl>
+                                </li>
 
                                 <li class="timeline-item experience-project">
-                                    <h3 class="timeline-title"><span class="experience-project-type">个人商业项目 angular+.net core 农家乐项目</span><span class="experience-title-aside"></span></h3>
+                                    <h3 class="timeline-title"><span class="experience-project-type">个人项目-kong微服务网关</span><span class="experience-title-aside"></span></h3>
                                     <dl class="experience-description timeline-content">
                                         <dd class="experience-task" style="margin-top:5px;">
-                                            现在正在做的一个商业项目。自己一个人独自完成；
-                                            前台页面使用react 服务渲染来完成,后台页面angular 来做的。angular 接管.net core视图路由。
-                                            完全前后端分离;
-                                            .net core 管理控制权限;
-                                            整个分为几大模块;
-                                            使用技术栈:
-                                            框架:.net core,
-                                            数据库:mysql 8.0.7,
-                                            消息队列: RabbitMQ,
-                                            orm: ef,
-                                            防止xss,以及inner script 脚本注入头中间件
-                                            <a href="http://www.keep-wan.me">项目预览</a>
-                                            由于是先完成后台的。所以前台只有登入功能可用; api 风格是基于RESTful API
-                                            <p><span>普通用户测试帐号:  用户名： keep_wan  密码：E1w>l}g4=6r%</span></p>
                                             <ul>
-                                                <li>1,错误日志模块（记录在后端本地）</li>
-                                                <li> 2,权限模块(接口权限，路由权限。接口时效验证，接口签名验证，)</li>
-                                                <li> 3,角色模块，(不同角色分配不同权限)</li>
-                                                <li>4，用户模块(一个用户有多个角色)</li>
-                                                <li>5, 菜单模块;(权限菜单。自定义菜单多语言，菜单图表。无限层级菜单.菜单排序)</li>
-                                                <li>6, 在线客服模块:(通过.net signlar实现在线客服。在线通知消息)</li>
-                                                <li>7, jwt 验证。  XSS攻击防护。  Content-Security-Policy头防护</li>
-                                                <li>8, 利用.net core 绘图模块绘制 验证码</li>
-                                                <li>9, 未完成部分。 商品模块。 优惠券模块。  订单模块</li>
+                                                <li>1,kong微服务网关, 服务熔断，转发，降级，鉴权，配置以及运维</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="timeline-item experience-project">
+                                    <h3 class="timeline-title"><span class="experience-project-type">个人项目-民宿与景区管理后台api(.net core)</span><span class="experience-title-aside"></span></h3>
+                                    <dl class="experience-description timeline-content">
+                                        <dd class="experience-task" style="margin-top:5px;">
+                                            <ul>
+                                                <li>1,通过grpc调用用户服务，与认证服务，商户服务，消息服务来管理数据</li>
+                                                <li>2,为了保证数据安全做了绩点防护,
+                                                    一.使用ras不对称密钥加密解密传输数据，
+                                                    二。颁发签名，密钥，时间给前端，前端请求必须携带三者在请求头中，
+                                                    三。单点登录+token黑名单+ tokenIp地址绑定，防止token被盗用, 
+                                                    四.接口权限控制,通过分配用户不同的角色去控制接口的访问权限，粒度控制权限到按钮级别，
+                                                    五， csrf防止伪跨站请求
+                                                    六. https
+                                                    七。 允许跨域白名单
+                                                </li>
+                                                <li>3,消息服务分发消息的模版配置模块</li>
+                                                <li>4,日志记录</li>
+                                                <li>5,商户模块</li>
+                                                <li>6,商品管理模块</li>
+                                                <li>7. 会员管理</li>
+                                                <li>8,系统设置</li>
+                                                <li>9,在线客服</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="timeline-item experience-project">
+                                    <h3 class="timeline-title"><span class="experience-project-type">个人项目-基础服务辅助工具方法(.net core)</span><span class="experience-title-aside"></span></h3>
+                                    <dl class="experience-description timeline-content">
+                                        <dd class="experience-task" style="margin-top:5px;">
+                                            <ul>
+                                                <li>1,redis辅助方法</li>
+                                                <li>2,json序列化与反序列化
+                                                </li>
+                                                <li>3,时间互转</li>
+                                                <li>4,统一扩展请求验证</li>
+                                                <li>5,图片裁剪，上传，压缩</li>
+                                                <li>6,dapper orm辅助方法</li>
+                                                <li>7. ef core 关联表方法</li>
+                                                <li>8,管道中间件</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="timeline-item experience-project">
+                                    <h3 class="timeline-title"><span class="experience-project-type">个人项目-用户服务(.net core)</span><span class="experience-title-aside"></span></h3>
+                                    <dl class="experience-description timeline-content">
+                                        <dd class="experience-task" style="margin-top:5px;">
+                                            <ul>
+                                                <li>1,基于.net core 和grpc的rbac 用户系统微服务</li>
+                                                <li>2,管理所有用户的 角色，权限，
+                                                </li>
+                                                <li>3,基于grpc 可以对接不同语言, 基于etcd服务发现治理，可以实现分布式</li>
+                                                <li>4,会员积分。会员积分，积分规则，会员成长值， 会员统计报表，会员优惠卷，会员任务</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="timeline-item experience-project">
+                                    <h3 class="timeline-title"><span class="experience-project-type">个人项目-民宿与景区管理后台前端(angular 9)</span><span class="experience-title-aside"></span></h3>
+                                    <dl class="experience-description timeline-content">
+                                        <dd class="experience-task" style="margin-top:5px;">
+                                            <ul>
+                                                <li>1,angular 9编写</li>
+                                                <li>2. rbac权限控制。路由权限。接口权限（后端）权限菜单。 细分颗粒到按钮。完全前后端分离。商品模块。会员模块。 excel报表。
+                                                </li>
+                                                <li>3.websocket在线客服。 实时联系客服。 </li>
+                                                <li>4.推广模块。 在线发布文章。发布视频和图片。 在线编辑图片。 </li>
+                                                <li>5.日志模块记录登入和操作日志</li>
+                                                <li>6,商户模块</li>
+                                                <li>7,商品管理模块</li>
+                                                <li>8. 会员管理</li>
+                                                <li>9,系统设置</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="timeline-item experience-project">
+                                    <h3 class="timeline-title"><span class="experience-project-type">个人项目-旅游民宿网站前端</span><span class="experience-title-aside"></span></h3>
+                                    <dl class="experience-description timeline-content">
+                                        <dd class="experience-task" style="margin-top:5px;">
+                                            <ul>
+                                                <li>1.尚未完成.业余时间正在制作的民宿与旅游项目</li>
+                                                <li>2.基于react next.js服务端渲染</li>
+                                                <li>3.民宿预订与农产品和景区推销</li>
                                             </ul>
                                         </dd>
                                     </dl>
@@ -224,7 +302,7 @@
                                     <dl class="skills-description timeline-content">
                                         <dt class="skills-item-summary">熟悉 <strong>c#1~7语法</strong> linq,委托事件。多线程。异步编程,lambda表达式,泛型，以及集合,ADO.net等等. <strong>c#</strong></dt>
                                         <dt class="skills-item-summary">熟悉 <strong>mysql基本语法以及编写</strong>  /<strong>mysql</strong></dt> 
-                                        <dt class="skills-item-summary">熟悉 <strong>.net core 2.X以上平台</strong> 能熟练搭建linux 下的.net core 服务器.并了解一点微服务.用过一点Ocelot跟kong&nbsp;&nbsp;&nbsp;<strong>.net core</strong></dt>
+                                        <dt class="skills-item-summary">熟悉 <strong>.net core 2.X以上平台</strong> 能熟练搭建linux 下的.net core 服务器.微服务.kong&nbsp;&nbsp;&nbsp;<strong>.net core</strong></dt>
                                         <dt class="skills-item-summary">熟悉RabbitMQ消息队列</dt>
                                         <dt class="skills-item-summary">熟悉.net 定时任务</dt>
                                         <dt class="skills-item-summary">了解 <strong>Node.js</strong></dt>
