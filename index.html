@@ -26,7 +26,7 @@
                 <address>
                         <ul class="contact">
                             <li class="contact-email"><a href="mailto://415494857@qq.com">415494857@qq.com</a></li>
-                            <li class="contact-phone">13265616949</li>
+                            <li class="contact-phone">15575867159</li>
                             <li class="contact-wechat">whevether</li>
                             <li class="contact-github"><a href="https://github.com/whevether">https://github.com/whevether</a></li>
                         </ul>
@@ -48,7 +48,7 @@
                                         <dt class="education-name">江西赣西学院</dt>
                                         <dd class="education-major">机械设计）</dd>
                                         <dt class="education-name">学历</dt>
-                                        <dd class="education-major">中专</dd>
+                                        <dd class="education-major">专科</dd>
                                     </dl>
                                 </li>
                             </ul>
@@ -123,29 +123,77 @@
                                     </dl>
                                 </li>
                                 <li class="timeline-item experience-internship">
-                                    <h3 class="timeline-title"><span class="experience-place">湖南中纵联联有限公司(职责：.net core后端+部分架构)</span>
+                                    <h3 class="timeline-title"><span class="experience-place">湖南中纵联联有限公司(职责：.net core后端+部分架构（中台部分）)</span>
                                         <time class="experience-time">2019.09-至今</time>
                                     </h3>
                                     <dl class="experience-description timeline-content">
                                         <dt class="experience-position">
                                             identityServer4认证中心服务
                                         </dt>
-                                        <dd class="experience-task"> 一人完成 <strong> 官网jq+webpack打包</strong>管理后台angular 8+angular material</dd>
+                                        <dd class="experience-task"> 认证中心 <strong> token</strong>颁发</dd>
+                                        <dd class="experience-task"> 认证中心 <strong> 可配置化</strong></dd>
+                                        <dd class="experience-task">单点登录<strong>sso</strong></dd>
+                                        <dd class="experience-task">认证中心在保证<strong>token</strong>没到过期时间不失效前提下授权证书密钥一天一换。自动续签证书</dd>
+                                        <dd class="experience-task">第三方应用授权<strong>oauth</strong></dd>
+                                        <dd class="experience-task">利用identityserver4对API授权和验证。支持oauth2等等。<strong>支持对api资源作用域权限验签</strong></dd>
                                     </dl>
-                                </li>
-
-                                <li class="timeline-item experience-project">
-                                    <h3 class="timeline-title"><span class="experience-project-type">个人项目-kong微服务网关</span><span class="experience-title-aside"></span></h3>
                                     <dl class="experience-description timeline-content">
-                                        <dd class="experience-task" style="margin-top:5px;">
-                                            <ul>
-                                                <li>1,kong微服务网关, 服务熔断，转发，降级，鉴权，配置以及运维</li>
-                                            </ul>
-                                        </dd>
+                                        <dt class="experience-position">
+                                            kong 微服务网关
+                                        </dt>
+                                        <dd class="experience-task"> kong微服务网关。<strong>熔断。降级以及转发。</strong>的配置和维护</dd>
+                                    </dl>
+                                    <dl class="experience-description timeline-content">
+                                        <dt class="experience-position">
+                                            上传服务
+                                        </dt>
+                                        <dd class="experience-task"> 支持上传到<strong>本地，阿里云，七牛云</strong>三种</dd>
+                                        <dd class="experience-task"> 可配置<strong>tinypng</strong>对上传图片压缩</dd>
+                                        <dd class="experience-task"> 超大文件<strong>切片,断点续传</strong>上传</dd>
+                                    </dl>
+                                    <dl class="experience-description timeline-content">
+                                        <dt class="experience-position">
+                                            聚合支付服务
+                                        </dt>
+                                        <dd class="experience-task"> 微信。支付宝。拉卡拉聚合支付服务,通过抽象工厂模式，适配器模式，享元模式等统一支付入口以及参数,可扩展性高</dd>
+                                        <dd class="experience-task">可配置化商户应用模版化打通微信支付。 支付宝支付。 拉卡拉支付</dd>
+                                        <dd class="experience-task">统一网站页面支付。支持微支付宝</dd>
+                                        <dd class="experience-task">统一退款。 支持微信。支付宝。拉卡拉</dd>
+                                        <dd class="experience-task">统一手机h5支付。支持支付宝。拉卡拉。</dd>
+                                        <dd class="experience-task">统一查询付款信息。支持支付宝。拉卡拉。微信</dd>
+                                        <dd class="experience-task">统一二维码扫描支付。 支持微信.支付宝</dd>
+                                        <dd class="experience-task">统一手机app支付。支持微信和支付宝</dd>
+                                        <dd class="experience-task">jssdk支付，支持微信公众号与小程序</dd>
+                                        <dd class="experience-task">统一资金转帐与查询。支持支付宝。微信</dd>
+                                        <dd class="experience-task">利用kafka的延时队列在支付完成通知因网络延迟的情况下，主动查询支付结果</dd>
+                                    </dl>
+                                    <dl class="experience-description timeline-content">
+                                        <dt class="experience-position">
+                                            消息服务
+                                        </dt>
+                                        <dd class="experience-task">基于rabbitmq实现的消息发送。消息应答微服务</dd>
+                                        <dd class="experience-task">对外开放接口可以发送站内信。 短信。 微信模版消息。 邮件。 支持多个渠道和单个渠道的群发与单独发</dd>
+                                        <dd class="experience-task">对于死信。发送失败。可配置自动重试次数限制重发。 </dd>
+                                        <dd class="experience-task">后台可配置微信。短信。以及邮箱。站内信模版。灵活改变发送内容。服务提供商。 </dd>
+                                        <dd class="experience-task">利用consul服务治理支持分布式部署。避免大量发送批量消息产生单个主机过热问题。 并对服务健康检查</dd>
+                                    </dl>
+                                    <dl class="experience-description timeline-content">
+                                        <dt class="experience-position">
+                                            基础服务辅助方法
+                                        </dt>
+                                        <dd class="experience-task"><strong>redis</strong>辅助方法</dd>
+                                        <dd class="experience-task"> json序列化与反系列方法</dd>
+                                        <dd class="experience-task">统一时间互转方法</dd>
+                                        <dd class="experience-task">统一请求验证扩展方法</dd>
+                                        <dd class="experience-task">rsa,md5,aes 加密解密辅助方法</dd>
+                                        <dd class="experience-task">dapper辅助方法</dd>
+                                        <dd class="experience-task">ef 表关联辅助方法</dd>
+                                        <dd class="experience-task">统一返回字段</dd>
+                                        <dd class="experience-task">封装httpclient方法</dd>
                                     </dl>
                                 </li>
                                 <li class="timeline-item experience-project">
-                                    <h3 class="timeline-title"><span class="experience-project-type">个人项目-民宿与景区管理后台api(.net core)</span><span class="experience-title-aside"></span></h3>
+                                    <h3 class="timeline-title"><span class="experience-project-type">民宿与景区管理后台api(.net5)</span><span class="experience-title-aside"></span></h3>
                                     <dl class="experience-description timeline-content">
                                         <dd class="experience-task" style="margin-top:5px;">
                                             <ul>
@@ -154,7 +202,7 @@
                                                     一.使用ras不对称密钥加密解密传输数据，
                                                     二。颁发签名，密钥，时间给前端，前端请求必须携带三者在请求头中，
                                                     三。单点登录+token黑名单+ tokenIp地址绑定，防止token被盗用, 
-                                                    四.接口权限控制,通过分配用户不同的角色去控制接口的访问权限，粒度控制权限到按钮级别，
+                                                    四. 接口权限控制,通过分配用户不同的角色去控制接口的访问权限，粒度控制权限到按钮级别，
                                                     五， csrf防止伪跨站请求
                                                     六. https
                                                     七。 允许跨域白名单
@@ -163,7 +211,7 @@
                                                 <li>4,日志记录</li>
                                                 <li>5,商户模块</li>
                                                 <li>6,商品管理模块</li>
-                                                <li>7. 会员管理</li>
+                                                <li>7.会员管理</li>
                                                 <li>8,系统设置</li>
                                                 <li>9,在线客服</li>
                                             </ul>
@@ -171,43 +219,28 @@
                                     </dl>
                                 </li>
                                 <li class="timeline-item experience-project">
-                                    <h3 class="timeline-title"><span class="experience-project-type">个人项目-基础服务辅助工具方法(.net core)</span><span class="experience-title-aside"></span></h3>
-                                    <dl class="experience-description timeline-content">
-                                        <dd class="experience-task" style="margin-top:5px;">
-                                            <ul>
-                                                <li>1,redis辅助方法</li>
-                                                <li>2,json序列化与反序列化
-                                                </li>
-                                                <li>3,时间互转</li>
-                                                <li>4,统一扩展请求验证</li>
-                                                <li>5,图片裁剪，上传，压缩</li>
-                                                <li>6,dapper orm辅助方法</li>
-                                                <li>7. ef core 关联表方法</li>
-                                                <li>8,管道中间件</li>
-                                            </ul>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li class="timeline-item experience-project">
-                                    <h3 class="timeline-title"><span class="experience-project-type">个人项目-用户服务(.net core)</span><span class="experience-title-aside"></span></h3>
+                                    <h3 class="timeline-title"><span class="experience-project-type">用户服务(.net5)</span><span class="experience-title-aside"></span></h3>
                                     <dl class="experience-description timeline-content">
                                         <dd class="experience-task" style="margin-top:5px;">
                                             <ul>
                                                 <li>1,基于.net core 和grpc的rbac 用户系统微服务</li>
                                                 <li>2,管理所有用户的 角色，权限，
                                                 </li>
-                                                <li>3,基于grpc 可以对接不同语言, 基于etcd服务发现治理，可以实现分布式</li>
+                                                <li>3,基于grpc 可以对接不同语言, 基于consul服务发现治理，可以实现分布式</li>
                                                 <li>4,会员积分。会员积分，积分规则，会员成长值， 会员统计报表，会员优惠卷，会员任务</li>
                                             </ul>
                                         </dd>
                                     </dl>
                                 </li>
                                 <li class="timeline-item experience-project">
-                                    <h3 class="timeline-title"><span class="experience-project-type">个人项目-民宿与景区管理后台前端(angular 9)</span><span class="experience-title-aside"></span></h3>
+                                    <h3 class="timeline-title"><span class="experience-project-type">总管理后台前端(angular 11)</span><span class="experience-title-aside"></span></h3>
                                     <dl class="experience-description timeline-content">
                                         <dd class="experience-task" style="margin-top:5px;">
+                                        <a href="https://center.keep-wan.me" target="_blank">预览地址</a>
+                                        </dd>
+                                        <dd class="experience-task" style="margin-top:5px;">
                                             <ul>
-                                                <li>1,angular 9编写</li>
+                                                <li>1,angular 11编写</li>
                                                 <li>2. rbac权限控制。路由权限。接口权限（后端）权限菜单。 细分颗粒到按钮。完全前后端分离。商品模块。会员模块。 excel报表。
                                                 </li>
                                                 <li>3.websocket在线客服。 实时联系客服。 </li>
@@ -215,31 +248,33 @@
                                                 <li>5.日志模块记录登入和操作日志</li>
                                                 <li>6,商户模块</li>
                                                 <li>7,商品管理模块</li>
-                                                <li>8. 会员管理</li>
-                                                <li>9,系统设置</li>
+                                                <li>8,消息管理模块</li>
+                                                <li>9. 会员管理</li>
+                                                <li>10,系统设置</li>
+                                                <li>11,支付管理模块</li>
                                             </ul>
                                         </dd>
                                     </dl>
                                 </li>
                                 <li class="timeline-item experience-project">
-                                    <h3 class="timeline-title"><span class="experience-project-type">个人项目-旅游民宿网站前端</span><span class="experience-title-aside"></span></h3>
+                                    <h3 class="timeline-title"><span class="experience-project-type">旅游民宿网站前端</span><span class="experience-title-aside"></span></h3>
                                     <dl class="experience-description timeline-content">
                                         <dd class="experience-task" style="margin-top:5px;">
-                                            <ul>
-                                                <li>1.尚未完成.业余时间正在制作的民宿与旅游项目</li>
-                                                <li>2.基于react next.js服务端渲染</li>
-                                                <li>3.民宿预订与农产品和景区推销</li>
-                                            </ul>
+                                            <a href="https://www.keep-wan.me" target="_blank">预览地址</a>
                                         </dd>
+                                        <dd class="experience-task" style="margin-top:5px;">
+                                            基于react next.js服务端渲染
+                                        </dd>
+                                        <dd class="experience-task" style="margin-top:5px;">民宿预订与农产品和景区推销</dd>
                                     </dl>
                                 </li>
                                 <li class="timeline-item experience-project">
-                                    <h3 class="timeline-title"><span class="experience-project-type">个人开源项目 react-blog</span><span class="experience-title-aside"><a href="https://github.com/whevether/reac-blog" class="experience-project-link">源代码</a></span></h3>
+                                    <h3 class="timeline-title"><span class="experience-project-type">react-blog</span><span class="experience-title-aside"><a href="https://github.com/whevether/reac-blog" class="experience-project-link">源代码</a></span></h3>
                                     <dl class="experience-description timeline-content">
                                         <dd class="experience-task" style="margin-top:5px;">
                                             这是一个使用react+redux完成的全家桶bolg 项目,服务端渲染; 后台框架使用node.js 的express 框架,数据库使用的是mongodb,
                                             状态管理使用的redux,  登入授权使用了jwt来；我对jwt比较熟悉;后台可以发布文章类型，写文章管理用户信息
-                                            大量使用es6 语法 字符串模板  async await等; 没有使用jq 的东西；因为我本人不喜欢jq 写的东西维护性太差了;
+                                            大量使用es6 语法 字符串模板  async await等; 没有使用jq 的东西；
                                         </dd>
                                     </dl>
                                 </li>
@@ -261,7 +296,6 @@
                                         <dd class="experience-task" style="margin-top:5px;">
                                             用我们公司写正在用的qeephp 写的一个blog项目。
                                             由于这个框架太老已经没有人维护了。所以我没有深入研究；
-                                            现在我做的项目已经转向laravel 跟node.js 做为后台
                                         </dd>
                                     </dl>
                                 </li>
@@ -270,19 +304,8 @@
                                     <dl class="experience-description timeline-content">
                                         <dd class="experience-task" style="margin-top:5px;">
                                             一个使用react version16+react-router v4+redux+axios+react-router-redux后台node.js实现的脚手架;
-                                            <a href="https://github.com/whevether/react-template">项目地址</a>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                
-                                <li class="timeline-item experience-project">
-                                    <h3 class="timeline-title"><span class="experience-project-type">个人商业项目 安卓手机端</span><span class="experience-title-aside"></span></h3>
-                                    <dl class="experience-description timeline-content">
-                                        <dd class="experience-task" style="margin-top:5px;">
-                                            kotlin手机农家乐app
-                                            <a href="#">与管理后台是配套的</a>
-                                            由于是先完成后台的。由于个人精力有限，暂时只做了登入以及布局
-                                            <p><span>主要作用是卖农产品使用技术栈： kotlin+dagger依赖注入+rxjava2+rx2-android-networking</span></p>
+                                            实际打包体积比umi脚手架小很多.加载速度很快
+                                            <a href="https://github.com/whevether/react-template" target="_blank">项目地址</a>
                                         </dd>
                                     </dl>
                                 </li>
@@ -300,26 +323,30 @@
                                 <li class="timeline-item skills-frontend">
                                     <h3 class="timeline-title"><span class="skills-type">.net 工程师</span></h3>
                                     <dl class="skills-description timeline-content">
-                                        <dt class="skills-item-summary">熟悉 <strong>c#1~7语法</strong> linq,委托事件。多线程。异步编程,lambda表达式,泛型，以及集合,ADO.net等等. <strong>c#</strong></dt>
-                                        <dt class="skills-item-summary">熟悉 <strong>mysql基本语法以及编写</strong>  /<strong>mysql</strong></dt> 
-                                        <dt class="skills-item-summary">熟悉 <strong>.net core 2.X以上平台</strong> 能熟练搭建linux 下的.net core 服务器.微服务.kong&nbsp;&nbsp;&nbsp;<strong>.net core</strong></dt>
+                                        <dt class="skills-item-summary">熟悉 <strong>c#1~8语法</strong> linq,委托事件。多线程。异步编程,lambda表达式,泛型，以及集合,ADO.net等等. <strong>c#</strong></dt>
+                                        <dt class="skills-item-summary">熟悉 <strong>mysql基本特性以及编写</strong></dt> 
+                                        <dt class="skills-item-summary">熟悉 <strong>postgresql基本特性以及编写</strong></dt> 
+                                        <dt class="skills-item-summary">熟悉 <strong>.net core 2.X以上平台</strong> 能熟练搭建linux 下的.net core 环境 部署上线</dt>
                                         <dt class="skills-item-summary">熟悉RabbitMQ消息队列</dt>
+                                        <dt class="skills-item-summary">熟悉redis</dt>
+                                        <dt class="skills-item-summary">熟悉consul服务治理</dt>
+                                        <dt class="skills-item-summary">熟悉docker部署和使用</dt>
+                                        <dt class="skills-item-summary">了解kafka分布式订阅/发布消息中间件</dt>
                                         <dt class="skills-item-summary">熟悉.net 定时任务</dt>
                                         <dt class="skills-item-summary">了解 <strong>Node.js</strong></dt>
-                                        <dd class="skills-item-description"><span>能够使用 <strong>Node.js API</strong> 或 <strong>Express</strong> / <strong>Connect</strong> 搭建 Web Server，编写页面、接口，了解常见的异步编程解决方案</span></dd>
+                                        <dd class="skills-item-description"><span>能够使用 <strong>Node.js API</strong> 或 <strong>Express</strong>搭建 Web Server，编写页面、接口，了解常见的异步编程解决方案</span></dd>
                                         <dt class="skills-item-summary">其他</dt>
-                                        <dd class="skills-item-description"><span>了解 <strong>HTTP</strong>、 <strong>TCP/IP</strong>基础，<strong>MongoDB</strong> / <strong>MySQL</strong></span></dd>
+                                        <dd class="skills-item-description"><span>了解 <strong>HTTP 1/2/3 区别以及部署</strong>、 <strong>TCP/IP</strong>基础，<strong>MongoDB</strong> / <strong>MySQL</strong></span></dd>
                                         <dt class="skills-item-summary">熟悉 <strong>HTML</strong> / <strong>CSS</strong></dt>
                                         <dd class="skills-item-description"><span>能够编写语义化的 <strong>HTML</strong>，模块化的 <strong>CSS</strong>，完成较复杂的布局</span></dd>
                                         <dd class="skills-item-description"><span>熟悉HTML5规范与CSS3的基本规则,熟悉Flex与rem布局</span></dd>
-                                        <dd class="skills-item-description"><span>熟悉Bootstrap框架，能够利用Bootstrap框架开发</span></dd>
                                         <dt class="skills-item-summary">了解 <strong>DOM</strong> / <strong>BOM</strong></dt>
                                         <dd class="skills-item-description"><span>了解原生 <strong>DOM</strong> 与 <strong>BOM</strong>，了解相关标准，能够完成桌面 / 移动端前端组件与 <strong>Ajax</strong> 数据交互的开发</span></dd>
                                         <dd class="skills-item-description"><span>了解常见的浏览器<strong>兼容性</strong>问题及其解决方案</span></dd>
                                         <dt class="skills-item-summary">熟悉 <strong>jQuery</strong> / <strong>Bootstrap</strong> / <strong>Vuejs</strong> <store>react</store></dt>
                                         <dd class="skills-item-description"><span>熟悉基本使用与扩展插件，能为项目进行定制</span></dd>
                                         <dd class="skills-item-description"><span>了解其设计思路与部分实现细节</span></dd>
-                                        <dd class="skills-item-description"><span>能够使用vuejs或react或angular全家桶开发spa,组件模块化开发,react使用过单元测试和服务端渲染;使用过react-router4</span></dd>
+                                        <dd class="skills-item-description"><span>能够使用vuejs或react或angular全家桶开发spa,组件模块化开发,react使用过单元测试和服务端渲染;使用过react-router5</span></dd>
                                         <dd class="skills-item-description"><span>熟悉<strong>Sass</strong> / <strong>PostCSS</strong></span></dd>
                                         <dd class="skills-item-description"><span>日常使用 <strong>Webpack / Gulp</strong> 打包构建工具</span></dd>
                                         <dd class="skills-item-description"><span>熟悉常见的前端开发规范，了解基本的前端性能优化知识</span></dd>
@@ -329,9 +356,9 @@
                                     <h3 class="timeline-title"><span class="skills-type">其他</span></h3>
                                     <ul class="skills-description skills-miscellaneous timeline-content">
                                         <li class="skills-item-description"><span>具备基本的 <strong>Web 安全</strong>知识 ( <strong>XSS</strong> / <strong>CSRF</strong>) 等</span></li>
-                                        <li class="skills-item-description"><span>熟悉linux centos开发环境, 熟悉搭建服务器,nginx 配置等</span></li>
+                                        <li class="skills-item-description"><span>熟悉linux centos开发环境, 熟悉搭建服务器,nginx 源码编译配置等</span></li>
                                         <li class="skills-item-description"><span>熟悉websocket能用其开发</span></li>
-                                        <li class="skills-item-description"><span>日常使用 <strong>git||gitee||gitlab</strong>, 与<strong>visual studio 跟 Vscode 开发</strong></span></li>
+                                        <li class="skills-item-description"><span>日常使用 <strong>git||gitee||gitlab</strong>, 与<strong>visual studio, Vscode,rider 开发</strong></span></li>
                                         <li class="skills-item-description"><span>能够熟练使用使用 <strong>Markdown</strong> 进行文档编写</span></li>
                                         <li class="skills-item-description"><span>能够使用 <strong>Photoshop</strong> 完成简单的切图</span></li>
                                         <li class="skills-item-description"><span>能够使用 <strong>git</strong> 进行版本控制和协作开发</span></li>
